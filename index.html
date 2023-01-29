@@ -2,6 +2,7 @@
 <html lnag="en">
     <head>
         <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="tab.js"></script>
         <meta charset="UTF-8">
         <meta name="desc" content="first webpage">
         <meta name="'viewport" width="width=device-width,initial-scale=1.0">
@@ -35,6 +36,30 @@
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title">about me</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Python Programming</span><br>Competetive programming in python</li>
+                                <li><span>Machine Learning</span><br>Familiar with Scikit-learn</li>
+                                <li><span>Team management</span><br>Can succesfully manage a team</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="projects">
+                            <ul>
+                                <li><span>Space invaders game</span><br>Done using pygame</li>
+                                <li><span>Space Travel Predictor</span><br>Used scikit-learn to predict space travel survival rate</li>                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>B.E CSE</span><br>2021-Present<br>Sri Shakthi Institute of Engineering and Technology</li>
+                                <li><span>Higher secondary</span><br>2019-2021<br>Sri Sathya Sai Higher Secondary School</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
